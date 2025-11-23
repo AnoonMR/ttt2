@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic-Tac-Toe | Minimax Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tic-Tac-Toe</h1>
+    <h2>Minimax Algorithm Demonstration</h2>
+
+    <!-- Mode Selection -->
+    <div class="mode-selector">
+      <button id="mode-ai" class="mode-btn active">Vs AI (Minimax)</button>
+      <button id="mode-2p" class="mode-btn">2 Player</button>
+    </div>
+
+    <!-- Status -->
+    <div id="status" class="status">
+      Mode: Vs AI | Turn: X
+    </div>
+
+    <!-- Game Board -->
+    <div class="board" id="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="reset-btn" class="reset-btn">Reset Game</button>
+    </div>
+
+    <!-- Minimax Info -->
+    <div id="ai-info" class="ai-info">
+      <h3>Minimax Info (AI Mode)</h3>
+      <p id="ai-details">
+        When you play in Vs AI mode, this panel will show
+        how the AI evaluated the moves using the Minimax algorithm.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
